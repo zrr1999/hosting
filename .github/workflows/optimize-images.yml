@@ -16,6 +16,10 @@ on:
       - 'slides/**/*.jpg'
       - 'slides/**/*.jpeg'
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   optimize:
     name: Optimize Images
