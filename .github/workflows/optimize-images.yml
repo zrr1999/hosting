@@ -1,0 +1,39 @@
+name: Optimize Images
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'images/**'
+      - 'slides/**/*.png'
+      - 'slides/**/*.jpg'
+      - 'slides/**/*.jpeg'
+  pull_request:
+    paths:
+      - 'images/**'
+      - 'slides/**/*.png'
+      - 'slides/**/*.jpg'
+      - 'slides/**/*.jpeg'
+
+jobs:
+  optimize:
+    name: Optimize Images
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compress Images
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
+          ignorePaths: 'node_modules/**,dist/**'
+          jpegQuality: '85'
+          jpegProgressive: true
+          pngQuality: '85'
+          webpQuality: '85'
