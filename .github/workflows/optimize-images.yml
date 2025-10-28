@@ -6,15 +6,9 @@ on:
       - main
     paths:
       - 'images/**'
-      - 'slides/**/*.png'
-      - 'slides/**/*.jpg'
-      - 'slides/**/*.jpeg'
   pull_request:
     paths:
       - 'images/**'
-      - 'slides/**/*.png'
-      - 'slides/**/*.jpg'
-      - 'slides/**/*.jpeg'
 
 permissions:
   contents: write
