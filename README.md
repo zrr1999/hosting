@@ -9,7 +9,7 @@ hosting/
 ├── images/          # 图片资源
 │   └── simple-cache/
 ├── slides/          # 幻灯片
-│   ├── 国奖答辩/
+│   ├── 本科生国奖答辩/
 │   └── 中国软件开源创新大赛/
 ├── LICENSE          # MIT许可证
 └── README.md        # 本文件
