@@ -12,7 +12,7 @@
 - 存放项目相关图片与图表
 - 支持 SVG 等矢量格式
 - 统一放在顶层 `images/` 下，按项目或主题继续分目录，例如 `images/blog/simple-cache/`
-- `images/profile/` 用于头像与标识：共享个人头像放在 `images/profile/personal/common/`；后续平台专用头像建议放在 `images/profile/platforms/<platform>/`；GitHub 组织 Logo 建议放在 `images/profile/github-orgs/<org>/`
+- `images/profile/` 用于头像与标识：当前个人 GitHub 头像在 `images/profile/github/personal/`；后续可按 `images/profile/<platform>/<account>/` 扩展，组织 Logo 建议放在 `images/profile/github-orgs/<org>/`
 - 通过 GitHub Actions 自动优化 `images/` 中的图片
 
 ### 幻灯片
