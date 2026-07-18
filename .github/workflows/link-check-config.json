@@ -2,9 +2,6 @@
   "ignorePatterns": [
     {
       "pattern": "^http://localhost"
-    },
-    {
-      "pattern": "^https://raw.githubusercontent.com"
     }
   ],
   "timeout": "20s",

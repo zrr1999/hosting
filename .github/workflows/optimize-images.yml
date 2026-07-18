@@ -5,10 +5,10 @@ on:
     branches:
       - main
     paths:
-      - 'images/**'
+      - "images/**"
   pull_request:
     paths:
-      - 'images/**'
+      - "images/**"
 
 permissions:
   contents: write
@@ -26,12 +26,11 @@ jobs:
           fetch-depth: 0
 
       - name: Compress Images
-        uses: calibreapp/image-actions@main
+        uses: calibreapp/image-actions@1.4.1
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
           compressOnly: true
-          ignorePaths: 'node_modules/**,dist/**,slides/**'
-          jpegQuality: '85'
+          ignorePaths: "node_modules/**,dist/**,slides/**"
+          jpegQuality: "85"
           jpegProgressive: true
-          pngQuality: '85'
-          webpQuality: '85'
+          pngQuality: "85"
+          webpQuality: "85"

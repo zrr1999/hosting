@@ -7,7 +7,7 @@ on:
   pull_request:
   schedule:
     # Run weekly on Monday at 00:00 UTC
-    - cron: '0 0 * * 1'
+    - cron: "0 0 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
       - name: Check links in Markdown files
         uses: gaurav-nelson/github-action-markdown-link-check@1.0.15
         with:
-          use-quiet-mode: 'yes'
-          use-verbose-mode: 'yes'
-          config-file: '.github/workflows/link-check-config.json'
-          check-modified-files-only: 'no'
+          use-quiet-mode: "yes"
+          use-verbose-mode: "yes"
+          config-file: ".github/workflows/link-check-config.json"
+          check-modified-files-only: "no"
