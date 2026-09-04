@@ -12,7 +12,9 @@
 - 存放项目相关图片与图表
 - 支持 SVG 等矢量格式
 - 统一放在顶层 `images/` 下，按项目或主题继续分目录，例如 `images/blog/simple-cache/`
-- `images/profile/` 用于头像与标识：当前个人 GitHub 头像在 `images/profile/github/personal/`；后续可按 `images/profile/<platform>/<account>/` 扩展，组织 Logo 建议放在 `images/profile/github-orgs/<org>/`
+- `images/profile/` 用于跨平台头像与标识，按身份组织为 `images/profile/<identity>/`
+- 每个身份目录统一提供 `avatar.png`（1024×1024，全尺寸）和 `icon.png`（256×256，为浏览器标签、小徽标等小尺寸场景优化构图）
+- 当前身份包括 `personal/`、`zendev-lab/` 和 `morirun/`
 - 通过 GitHub Actions 自动优化 `images/` 中的图片
 
 ### 幻灯片
